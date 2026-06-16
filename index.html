@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+EEK ANI DEFTERİM ❤️
+</title>
+<link rel="manifest" href="manifest.json">
+
+<meta
+name="theme-color"
+content="#ec4899">
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="background-animation"></div>
+
+<!-- =======================
+LOGIN
+======================= -->
+
+<section id="loginScreen">
+
+<div class="login-container glass">
+
+<div class="logo-area">
+
+<img
+src="assets/logo.png"
+class="logo">
+
+<h1>
+EEK ANI DEFTERİM
+</h1>
+
+<p>
+Anılarımızı sonsuza kadar saklayalım ❤️
+</p>
+
+</div>
+
+<div class="slider">
+
+<div class="slides">
+
+<img
+src="assets/slide1.jpg"
+class="slide active">
+
+<img
+src="assets/slide2.jpg"
+class="slide">
+
+<img
+src="assets/slide3.jpg"
+class="slide">
+
+<img
+src="assets/slide4.jpg"
+class="slide">
+
+</div>
+
+</div>
+
+<div class="login-form">
+
+<input
+type="text"
+id="username"
+placeholder="Kullanıcı Adı">
+
+<input
+type="password"
+id="password"
+placeholder="Şifre">
+
+<button id="loginBtn">
+Giriş Yap ❤️
+</button>
+
+<p id="loginError"></p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+UYGULAMA
+======================= -->
+
+<section
+id="appScreen"
+class="hidden">
+
+<header
+class="top-header glass">
+
+<h2>
+❤️ EEK ANI DEFTERİM
+</h2>
+
+<button id="logoutBtn">
+🚪 Çıkış
+</button>
+
+</header>
+
+<!-- =======================
+KAPAK KARTI
+======================= -->
+
+<section
+class="cover-card glass">
+
+<img
+src="assets/slide1.jpg"
+class="cover-photo">
+
+<div
+class="cover-content">
+
+<h1>
+❤️ Barış & Emine ❤️
+</h1>
+
+<p>
+04.05.2026'dan beri birlikte
+</p>
+
+<div id="liveCounter">
+
+0 Gün
+0 Saat
+0 Dakika
+0 Saniye
+
+</div>
+
+<div id="dailyQuote">
+
+❤️
+
+</div>
+
+</div>
+
+</section><!-- =======================
+İSTATİSTİKLER
+======================= -->
+
+<section
+class="stats-grid">
+
+<div class="stat-card glass">
+
+<div class="stat-icon">
+❤️
+</div>
+
+<div class="stat-info">
+
+<h3 id="totalMemories">
+0
+</h3>
+
+<p>
+Toplam Anı
+</p>
+
+</div>
+
+</div>
+
+<div class="stat-card glass">
+
+<div class="stat-icon">
+📸
+</div>
+
+<div class="stat-info">
+
+<h3 id="totalPhotos">
+0
+</h3>
+
+<p>
+Toplam Fotoğraf
+</p>
+
+</div>
+
+</div>
+
+<div class="stat-card glass">
+
+<div class="stat-icon">
+📅
+</div>
+
+<div class="stat-info">
+
+<h3 id="totalDays">
+0
+</h3>
+
+<p>
+Birlikte
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<button
+id="installAppBtn"
+class="install-btn">
+
+📱 Uygulamayı Yükle
+
+</button>
+
+<!-- =======================
+MÜZİK OYNATICI
+======================= -->
+
+<section
+class="music-player glass">
+
+<h3>
+🎵 Romantik Çalma Listesi
+</h3>
+
+<div class="music-controls">
+
+<button id="prevMusicBtn">
+⏮
+</button>
+
+<button id="musicBtn">
+▶
+</button>
+
+<button id="nextMusicBtn">
+⏭
+</button>
+
+<button id="shuffleBtn">
+🔀
+</button>
+
+</div>
+
+<div
+class="music-title">
+
+<span id="musicName">
+
+Romantik 1
+
+</span>
+
+</div>
+
+<div
+class="volume-area">
+
+<span>
+🔉
+</span>
+
+<input
+type="range"
+id="volumeSlider"
+min="0"
+max="100"
+value="70">
+
+<span>
+🔊
+</span>
+
+</div>
+
+<audio
+id="bgMusic">
+</audio>
+
+</section>
+
+<!-- =======================
+MENÜ
+======================= -->
+
+<nav
+class="menu glass">
+
+<button
+data-page="homePage">
+
+🏠 Ana Sayfa
+
+</button>
+
+<button
+data-page="favoritesPage">
+
+⭐ Favoriler
+
+</button>
+
+<button
+data-page="galleryPage">
+
+📸 Galeri
+
+</button>
+
+<button
+data-page="timelinePage">
+
+🕒 Zaman Tüneli
+
+</button>
+
+<button
+data-page="backupPage">
+
+💾 Yedekleme
+
+</button>
+
+</nav>
+
+<main><!-- =======================
+ANA SAYFA
+======================= -->
+
+<section
+id="homePage"
+class="page active-page">
+
+<!-- SON EKLENEN ANI -->
+
+<div
+class="last-memory-card glass">
+
+<h3>
+📖 Son Eklenen Anı
+</h3>
+
+<div id="lastMemory">
+
+Henüz anı eklenmedi ❤️
+
+</div>
+
+</div>
+
+<!-- ARAMA -->
+
+<div
+class="search-box glass">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Anılarda ara...">
+
+</div>
+
+<!-- ANI EKLE -->
+
+<div
+class="memory-form glass">
+
+<h3>
+📝 Yeni Anı Ekle
+</h3>
+
+<input
+type="text"
+id="memoryTitle"
+placeholder="Anı Başlığı">
+
+<textarea
+id="memoryText"
+placeholder="Bugünün güzel anısını yaz ❤️">
+</textarea>
+
+<input
+type="file"
+id="memoryPhotos"
+multiple
+accept="image/*">
+
+<button
+id="saveMemoryBtn">
+
+💾 Anıyı Kaydet
+
+</button>
+
+</div>
+
+<!-- ANI LİSTESİ -->
+
+<div
+id="memoryList"
+class="memory-list">
+
+</div>
+
+</section>
+
+<!-- =======================
+FAVORİLER
+======================= -->
+
+<section
+id="favoritesPage"
+class="page">
+
+<div
+class="glass">
+
+<h2>
+⭐ Favori Anılar
+</h2>
+
+<div
+id="favoritesList"
+class="memory-list">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+GALERİ
+======================= -->
+
+<section
+id="galleryPage"
+class="page">
+
+<div
+class="glass">
+
+<h2>
+📸 Fotoğraf Galerisi
+</h2>
+
+<div
+id="galleryContainer"
+class="gallery-grid">
+
+</div>
+
+</div>
+
+</section><!-- =======================
+ZAMAN TÜNELİ
+======================= -->
+
+<section
+id="timelinePage"
+class="page">
+
+<div class="glass">
+
+<h2>
+🕒 Zaman Tüneli
+</h2>
+
+<div
+id="timelineContainer">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+YEDEKLEME
+======================= -->
+
+<section
+id="backupPage"
+class="page">
+
+<div
+class="glass backup-card">
+
+<h2>
+💾 Yedekleme
+</h2>
+
+<p>
+
+Anılarınızı JSON olarak
+dışa aktarabilir veya
+geri yükleyebilirsiniz.
+
+</p>
+
+<div
+class="backup-buttons">
+
+<button
+id="exportBtn">
+
+📤 Yedek Dışa Aktar
+
+</button>
+
+<input
+type="file"
+id="importFile"
+accept=".json">
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- =======================
+FOTOĞRAF MODAL
+======================= -->
+
+<div
+id="imageModal"
+class="modal">
+
+<span
+id="closeModal">
+
+&times;
+
+</span>
+
+<img
+id="modalImage">
+
+</div>
+
+<!-- =======================
+ARKA PLAN KALPLERİ
+======================= -->
+
+<div
+id="heartsContainer">
+
+</div>
+
+<!-- =======================
+SCRIPT
+======================= -->
+
+<script
+src="script.js">
+</script>
+
+</section>
+
+</body>
+
+</html>
