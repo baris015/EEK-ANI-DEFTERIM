@@ -663,52 +663,52 @@ const playlist = [
 
 {
 name:"Romantik 1",
-file:"assets/romantik1.mp3"
+file:"romantik1.mp3"
 },
 
 {
 name:"Romantik 2",
-file:"assets/romantik2.mp3"
+file:"romantik2.mp3"
 },
 
 {
 name:"Romantik 3",
-file:"assets/romantik3.mp3"
+file:"romantik3.mp3"
 },
 
 {
 name:"Romantik 4",
-file:"assets/romantik4.mp3"
+file:"romantik4.mp3"
 },
 
 {
 name:"Romantik 5",
-file:"assets/romantik5.mp3"
+file:"romantik5.mp3"
 },
 
 {
 name:"Romantik 6",
-file:"assets/romantik6.mp3"
+file:"romantik6.mp3"
 },
 
 {
 name:"Romantik 7",
-file:"assets/romantik7.mp3"
+file:"romantik7.mp3"
 },
 
 {
 name:"Romantik 8",
-file:"assets/romantik8.mp3"
+file:"romantik8.mp3"
 },
 
 {
 name:"Romantik 9",
-file:"assets/romantik9.mp3"
+file:"romantik9.mp3"
 },
 
 {
 name:"Romantik 10",
-file:"assets/romantik10.mp3"
+file:"romantik10.mp3"
 }
 
 ];
